@@ -36,6 +36,32 @@ Start the server: npm run dev.
 
 🔗 URL Interceptions
 
+users:
+🔗 **URL Interceptions**
+
+| **Endpoint**           | **HTTP Method** | **Authorization**        | **Action**                     | **Response Status**       | **Response Body**                                             |
+|------------------------|-----------------|--------------------------|--------------------------------|---------------------------|---------------------------------------------------------------|
+| `/register`            | `POST`          | All                      | Register new user              | `201 Created`, `400 Bad Request` | Success message with user data, or error message.            |
+| `/login`               | `POST`          | All                      | User login                     | `200 OK`, `401 Unauthorized`, `404 Not Found` | JWT token on successful login, or error message.             |
+| `/`                    | `GET`           | Admin                    | Get all users                   | `200 OK`, `500 Internal Server Error` | Array of users, or error message.                            |
+| `/users/:id`           | `GET`           | Registered user or Admin  | Get user by ID                 | `200 OK`, `404 Not Found`  | User object in JSON format, or error message.                |
+| `/users/:id`           | `PUT`           | Registered user           | Edit user data                 | `200 OK`, `400 Bad Request` | Updated user object in JSON format, or error message.        |
+| `/users/:id`           | `PATCH`         | Registered user           | Change isBusiness status       | `200 OK`, `400 Bad Request` | Success message with updated user data, or error message.    |
+| `/users/:id`           | `DELETE`        | Registered user or Admin  | Delete user                    | `200 OK`, `404 Not Found`  | Success message with deleted user data, or error message.    |
+
+cards:
+🔗 **URL Interceptions**
+
+| **Endpoint**           | **HTTP Method** | **Authorization**        | **Action**                     | **Response Status**       | **Response Body**                                             |
+|------------------------|-----------------|--------------------------|--------------------------------|---------------------------|---------------------------------------------------------------|
+| `/`                    | `GET`           | All                      | Get all cards                  | `200 OK`, `500 Internal Server Error` | Array of cards, or error message.                            |
+| `/my-cards`            | `GET`           | Registered user (auth)   | Get user's cards               | `200 OK`, `404 Not Found`  | Array of user's cards, or error message.                     |
+| `/cards/:id`           | `GET`           | All                      | Get card by ID                 | `200 OK`, `404 Not Found`  | Card object in JSON format, or error message.                |
+| `/`                    | `POST`          | Business user (auth)     | Create new card                | `201 Created`, `400 Bad Request` | Created card object in JSON format, or error message.        |
+| `/cards/:id`           | `PUT`           | Card owner (auth, isRegistered) | Edit card                    | `200 OK`, `400 Bad Request`, `404 Not Found` | Updated card object in JSON format, or error message.        |
+| `/cards/:id`           | `PATCH`         | Registered user (auth)   | Like or unlike card            | `200 OK`, `400 Bad Request`, `404 Not Found` | Updated card object with like status, or error message.      |
+| `/cards/:id`           | `DELETE`        | Card owner or admin (auth) | Delete card                   | `200 OK`, `404 Not Found`  | Success message with deleted card, or error message.         |
+
 
 💻 Technologies Used
 
