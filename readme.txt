@@ -10,14 +10,11 @@ Admin details are included in the initial users data.
 API overview can be found at:
 http://localhost:8080/
 
-This page offers a brief description of the available API endpoints for users and cards, along with links to the full documentation.
-
 ⚙️ Features
 🔑 User authentication and authorization
 🔄 CRUD operations for users
 🔄 CRUD operations for cards
 🛡️ Middleware-based authentication and role management
-🧑‍💼 Admin privileges for changing business numbers
 📜 Logging system for failed requests
 🚫 Account lockout after multiple failed login attempts
 🛠️ Installation
@@ -40,12 +37,19 @@ Start the server: npm run dev.
 🔗 URL Interceptions
 
 
-Technologies Used
+💻 Technologies Used
+
 Node.js: The JavaScript runtime environment used to build the API.
+
 Express.js: A web framework for building the API.
+
 MongoDB: A NoSQL database used to store user and card data.
+
 Mongoose: An ODM (Object Data Modeling) library for MongoDB and Node.js.
+
 JWT (JSON Web Tokens): For secure user authentication and session management.
+
 Lodash: A utility library for simplifying JavaScript operations like object manipulation.
-License
-This project is licensed under the MIT License
+
+🔖 License
+This project is licensed under the MIT License.
