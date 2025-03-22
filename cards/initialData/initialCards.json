@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Tech Solutions",
+    "subTitle": "Innovative IT Services",
+    "description": "Providing top-notch IT solutions for businesses of all sizes.",
+    "phone": "+1-555-1234",
+    "email": "contact@techsolutions.com",
+    "web": "https://www.techsolutions.com",
+    "image": {
+      "url": "https://example.com/tech.jpg",
+      "alt": "Tech company office"
+    },
+    "address": {
+      "state": "California",
+      "country": "USA",
+      "city": "San Francisco",
+      "street": "Market Street",
+      "houseNumber": "101",
+      "zip": 94103
+    },
+    "bizNumber": 100001,
+    "userId": "67d211e5ca7de4deca7e0083"
+  },
+  {
+    "title": "Green Earth Landscaping",
+    "subTitle": "Eco-friendly Garden Designs",
+    "description": "Transforming outdoor spaces with sustainable and creative landscaping.",
+    "phone": "+1-555-5678",
+    "email": "info@greenearth.com",
+    "web": "https://www.greenearth.com",
+    "image": {
+      "url": "https://example.com/landscape.jpg",
+      "alt": "Beautiful garden landscape"
+    },
+    "address": {
+      "state": "Texas",
+      "country": "USA",
+      "city": "Austin",
+      "street": "Main Street",
+      "houseNumber": "220",
+      "zip": 78701
+    },
+    "bizNumber": 100002,
+    "userId": "67d2121bca7de4deca7e0085"
+  },
+  {
+    "title": "City Gym",
+    "subTitle": "Your Fitness Hub",
+    "description": "State-of-the-art fitness center with professional trainers and equipment.",
+    "phone": "+1-555-9876",
+    "email": "support@citygym.com",
+    "web": "https://www.citygym.com",
+    "image": {
+      "url": "https://example.com/gym.jpg",
+      "alt": "Modern gym with workout equipment"
+    },
+    "address": {
+      "state": "New York",
+      "country": "USA",
+      "city": "New York City",
+      "street": "Broadway",
+      "houseNumber": "50",
+      "zip": 10001
+    },
+    "bizNumber": 100003,
+    "userId": "67d2144763850e8bc235d6c2"
+  }
+]
